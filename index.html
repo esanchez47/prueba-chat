@@ -15,8 +15,10 @@
 		
 		<main class="container-chat">
 
-			<!-- <article id="mensaje"></article> -->
+			<section id="conversa" class="mensajes-chat">
+				
 
+			</section>
 			
 		</main>
 
@@ -24,7 +26,7 @@
 			
 			<form>
 				<input type="text" id="usuario" class="remitente">
-				<textarea name="" id="chatmsg" rows="4"></textarea>
+				<textarea id="chatmsg" rows="4"></textarea>
 				<button onclick="Chat.enviar(event)" id="enviar">Enviar</button>
 				<button onclick="Chat.borrar(event)" id="borrar">Borrar</button>
 			</form>
