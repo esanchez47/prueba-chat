@@ -32,6 +32,8 @@
 
 .container-chat{
 	padding:0 30px;
+	overflow-y: scroll;
+	position:relative;
 }
 
 section.chatbox{

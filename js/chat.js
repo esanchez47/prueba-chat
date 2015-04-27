@@ -16,18 +16,13 @@ Chat.enviar = function(e){
 	var mensaje = document.getElementById('chatmsg').value;
 	var msg = new Chat(usuario, chatmsg);
 	Chat.mensaje.push(msg);
-	console.log(Chat.mensaje);
 	
-	Chat.borrar(e);
+	
 	Chat.mostrar();
 }
 
 // clear mensaje
-Chat.borrar = function(e){
-	var mensaje = document.getElementById('chatmsg');
-	chatmsg.value ='';
 
-}
 
 // mostrar chats
 Chat.mostrar = function(){
@@ -35,15 +30,13 @@ Chat.mostrar = function(){
 	Chat.mensaje.map(function(elemento, indice){
 
 		conversa += '<article>';
-				 + '<h4>' + elemento.usuario + '</h4>';
-				 + '<p>' + elemento.chatmsg + '</p>';
-				 + '</article>';
+		conversa += '<h4>' + elemento.usuario + '</h4>';
+		conversa += '<p>' + elemento.chatmsg + '</p>';
+		conversa += '</article>';
 	})
 
 	document.getElementById('conversa').innerHTML = conversa;
 }
-
-
 
 
 
